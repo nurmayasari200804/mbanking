@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods - Daftar Rekening & E-Wallet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-wallet"></i> Metode Pembayaran</h1>
+            <p>Pilih metode pembayaran yang tersedia di bawah ini</p>
+        </div>
+
+        <div class="payment-grid">
+            <!-- Bank BRI -->
+            <div class="payment-card bri" data-method="bri">
+                <div class="card-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3>Bank BRI</h3>
+                <div class="account-number" id="bri-account">025901087762503</div>
+                <div class="account-name">A/N: Nurmayasari Usman</div>
+                <button class="copy-btn" data-account="bri-account">
+                    <i class="fas fa-copy"></i> Salin No Rekening
+                </button>
+            </div>
+
+            <!-- SeaBank -->
+            <div class="payment-card seabank" data-method="seabank">
+                <div class="card-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <h3>SeaBank</h3>
+                <div class="account-number" id="seabank-account">901641785010</div>
+                <div class="account-name">A/N: Nurmayasari Usman</div>
+                <button class="copy-btn" data-account="seabank-account">
+                    <i class="fas fa-copy"></i> Salin No Rekening
+                </button>
+            </div>
+
+            <!-- ShopeePay -->
+            <div class="payment-card shopeepay" data-method="shopeepay">
+                <div class="card-icon">
+                    <i class="fas fa-shopify"></i>
+                </div>
+                <h3>ShopeePay</h3>
+                <div class="account-number" id="shopeepay-account">082246038126</div>
+                <div class="account-name">Username: @nmayaaaa</div>
+                <button class="copy-btn" data-account="shopeepay-account">
+                    <i class="fas fa-copy"></i> Salin ID ShopeePay
+                </button>
+            </div>
+
+            <!-- DANA -->
+            <div class="payment-card dana" data-method="dana">
+                <div class="card-icon">
+                    <i class="fas fa-dove"></i>
+                </div>
+                <h3>DANA</h3>
+                <div class="account-number" id="dana-account">082246038126</div>
+                <div class="account-name">A/N: Nurmayasari Usman</div>
+                <button class="copy-btn" data-account="dana-account">
+                    <i class="fas fa-copy"></i> Salin No DANA
+                </button>
+            </div>
+
+            <!-- GoPay -->
+            <div class="payment-card gopay" data-method="gopay">
+                <div class="card-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>GoPay</h3>
+                <div class="account-number" id="gopay-account">082246038126</div>
+                <div class="account-name">A/N: Nurmayasari Usman</div>
+                <button class="copy-btn" data-account="gopay-account">
+                    <i class="fas fa-copy"></i> Salin No GoPay
+                </button>
+            </div>
+        </div>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast">
+            <i class="fas fa-check-circle"></i>
+            <span>Nomor berhasil disalin!</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
