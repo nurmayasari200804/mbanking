@@ -1,191 +1,39 @@
-/* Main container styling */
-.stApp {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.header-container {
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
     text-align: center;
-    padding: 2rem 1rem;
-    background: white;
-    border-radius: 20px;
-    margin-bottom: 2rem;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
 
-.header-container h1 {
-    margin: 0;
-    color: #333;
-    font-size: 2.5rem;
+.container {
+    padding: 30px;
 }
 
-.header-container p {
-    margin: 0.5rem 0 0;
-    color: #666;
-    font-size: 1.1rem;
+.card {
+    background: #1e293b;
+    margin: 10px auto;
+    padding: 15px;
+    width: 300px;
+    border-radius: 12px;
 }
 
-/* Payment Card Styling */
-.payment-card {
-    background: white;
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.payment-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #f0f0f0;
-}
-
-.bank-icon {
-    font-size: 2rem;
-}
-
-.bank-name {
-    margin: 0;
-    font-size: 1.8rem;
+span {
     font-weight: bold;
-    color: #333;
+    color: #38bdf8;
 }
 
-/* Account fields */
-.account-field {
-    margin-bottom: 1rem;
-}
-
-.account-field label {
-    display: block;
-    font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 0.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.account-number {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #333;
-    font-family: 'Courier New', monospace;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f8f9fa;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    margin-top: 0.25rem;
-}
-
-.account-name {
-    font-size: 1.1rem;
-    color: #555;
-    background: #f8f9fa;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    word-break: break-word;
-}
-
-/* Copy button styling */
-.copy-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
     border: none;
-    color: white;
-    padding: 0.4rem 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-}
-
-.copy-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.copy-btn:active {
-    transform: scale(0.95);
-}
-
-/* Info section */
-.info-section {
-    background: white;
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin: 2rem 0;
-    text-align: center;
-}
-
-.info-section h3 {
-    color: #333;
-    margin-top: 0;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 2rem;
-    color: white;
-    margin-top: 2rem;
-}
-
-.footer p {
-    margin: 0.25rem 0;
-    opacity: 0.9;
-}
-
-/* Toast notification */
-.toast-notification {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #4caf50;
-    color: white;
-    padding: 12px 24px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    z-index: 1000;
-    animation: slideIn 0.3s ease;
+    cursor: pointer;
+    background: #22c55e;
+    color: white;
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .header-container h1 {
-        font-size: 1.8rem;
-    }
-    
-    .bank-name {
-        font-size: 1.4rem;
-    }
-    
-    .account-number {
-        font-size: 1rem;
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .copy-btn {
-        width: 100%;
-    }
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
 }
