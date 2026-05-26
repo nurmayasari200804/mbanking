@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Pembayaran - Nurmayasari Usman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bank BRI -->
+        <div class="payment-card">
+            <div class="card-header">
+                <i class="fas fa-university"></i>
+                <h2>Bank BRI</h2>
+            </div>
+            <div class="card-body">
+                <div class="label">Nomor Rekening</div>
+                <div class="account-number" id="bri-number">025901087762503</div>
+                <div class="account-name" id="bri-name">Nurmayasari Usman</div>
+                <button class="copy-btn" data-target="bri-number" data-name="BRI">
+                    <i class="fas fa-copy"></i> Salin
+                </button>
+            </div>
+        </div>
+
+        <!-- SeaBank -->
+        <div class="payment-card">
+            <div class="card-header">
+                <i class="fas fa-water"></i>
+                <h2>SeaBank</h2>
+            </div>
+            <div class="card-body">
+                <div class="label">Nomor Rekening</div>
+                <div class="account-number" id="seabank-number">901641785010</div>
+                <div class="account-name" id="seabank-name">Nurmayasari Usman</div>
+                <button class="copy-btn" data-target="seabank-number" data-name="SeaBank">
+                    <i class="fas fa-copy"></i> Salin
+                </button>
+            </div>
+        </div>
+
+        <!-- DANA -->
+        <div class="payment-card">
+            <div class="card-header">
+                <i class="fas fa-dove"></i>
+                <h2>DANA</h2>
+            </div>
+            <div class="card-body">
+                <div class="label">Nomor DANA</div>
+                <div class="account-number" id="dana-number">082246038126</div>
+                <div class="account-name" id="dana-name">Nurmayasari Usman</div>
+                <button class="copy-btn" data-target="dana-number" data-name="DANA">
+                    <i class="fas fa-copy"></i> Salin
+                </button>
+            </div>
+        </div>
+
+        <!-- GoPay -->
+        <div class="payment-card">
+            <div class="card-header">
+                <i class="fas fa-leaf"></i>
+                <h2>GoPay</h2>
+            </div>
+            <div class="card-body">
+                <div class="label">Nomor GoPay</div>
+                <div class="account-number" id="gopay-number">082246038126</div>
+                <div class="account-name" id="gopay-name">Nurmayasari Usman</div>
+                <button class="copy-btn" data-target="gopay-number" data-name="GoPay">
+                    <i class="fas fa-copy"></i> Salin
+                </button>
+            </div>
+        </div>
+
+        <!-- ShopeePay -->
+        <div class="payment-card">
+            <div class="card-header">
+                <i class="fas fa-shopify"></i>
+                <h2>ShopeePay</h2>
+            </div>
+            <div class="card-body">
+                <div class="label">Nomor ShopeePay</div>
+                <div class="account-number" id="shopeepay-number">082246038126</div>
+                <div class="account-name" id="shopeepay-name">nmayaaaa</div>
+                <button class="copy-btn" data-target="shopeepay-number" data-name="ShopeePay">
+                    <i class="fas fa-copy"></i> Salin
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-message">Berhasil disalin!</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
