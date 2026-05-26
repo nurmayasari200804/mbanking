@@ -1,0 +1,239 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+}
+
+/* Custom Header */
+.custom-header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.custom-header .header-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.custom-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.custom-header p {
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+/* Payment Card */
+.payment-card {
+    background: white;
+    border-radius: 16px;
+    margin: 0 16px 16px 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.payment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Header */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: #f8f9fc;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.card-icon {
+    font-size: 28px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+.field-label {
+    font-size: 12px;
+    color: #8e8e93;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.account-number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    word-break: break-all;
+}
+
+.account-name {
+    font-size: 14px;
+    color: #6c6c70;
+    margin-bottom: 20px;
+}
+
+/* Copy Button */
+.copy-button {
+    width: 100%;
+    background: #0052cc;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copy-button:hover {
+    background: #0041a8;
+    transform: scale(0.98);
+}
+
+.copy-button:active {
+    transform: scale(0.96);
+}
+
+.copy-button .copy-icon {
+    font-size: 16px;
+}
+
+/* Icon Colors */
+.icon-bri { color: #0052cc; }
+.icon-seabank { color: #00a9b0; }
+.icon-dana { color: #2c7da0; }
+.icon-gopay { color: #00aa6c; }
+.icon-shopeepay { color: #ee4d2d; }
+
+/* Toast Notification */
+.toast-notification {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #1a1a2e;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.toast-notification.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.toast-notification .toast-icon {
+    color: #34c759;
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px 20px 20px;
+    color: #8e8e93;
+    font-size: 12px;
+}
+
+.footer hr {
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid #eef2f6;
+}
+
+.footer .version {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .custom-header h1 {
+        font-size: 22px;
+    }
+    
+    .payment-card {
+        margin: 0 12px 12px 12px;
+    }
+    
+    .card-body {
+        padding: 16px;
+    }
+    
+    .account-number {
+        font-size: 16px;
+    }
+    
+    .copy-button {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Streamlit Specific */
+.stButton > button {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.stAlert {
+    border-radius: 12px !important;
+}
